@@ -60,7 +60,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-02-28 17:55:44',
+  postUpdate: '2025-02-28 18:03:30',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -316,7 +316,7 @@ queueMicrotask(() => {
   if ($mermaid.length === 0) return
   const runMermaid = () => {
     window.loadMermaid = true
-    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? '' : ''
 
     Array.from($mermaid).forEach((item, index) => {
       const mermaidSrc = item.firstElementChild
